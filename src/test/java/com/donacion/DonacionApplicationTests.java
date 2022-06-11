@@ -3,7 +3,7 @@ package com.donacion;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = DonacionApplication.class)
+@SpringBootTest(classes = DonacionApplicationTests.class)
 class DonacionApplicationTests {
 
 	@Test
