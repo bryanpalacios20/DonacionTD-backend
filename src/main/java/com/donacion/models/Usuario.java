@@ -18,6 +18,8 @@ public class Usuario {
     private String apellidos;
     private String direccion;
 
+    private String rol;
+
     public Long getId() {
         return id;
     }
@@ -30,6 +32,15 @@ public class Usuario {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     public String getUsername() {
         return username;
     }

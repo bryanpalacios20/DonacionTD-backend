@@ -23,6 +23,10 @@ public class UsuarioService {
     public Usuario getUsuario(Long id){
         return usuarioRepository.findById(id).orElse(null);
     }
+
+    public Usuario getUsername(String username){
+        return usuarioRepository.findByUsername(username);
+    }
     public ArrayList<Usuario> getUsuarios(){
         return (ArrayList<Usuario>) usuarioRepository.findAll();
     }
@@ -32,5 +36,8 @@ public class UsuarioService {
     public String removeUsuario(Long id){
         usuarioRepository.deleteById(id);
         return "Remove successful";
+    }
+    public boolean existsByUsername(String username) {
+        return usuarioRepository.existsByUsername(username);
     }
 }
